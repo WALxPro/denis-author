@@ -5,6 +5,7 @@ import MoonIcon from '../components/MoonIcon'
 import RippleButton from '../components/RippleButton'
 import Toast from '../components/Toast'
 import ScrollReveal from '../components/ScrollReveal'
+import moonImage from "../assets/moon.png";
 
 export default function BookTrailer() {
   const [toast, setToast] = useState(null)
@@ -19,7 +20,11 @@ export default function BookTrailer() {
       <section className="hero" style={{minHeight:'100vh'}}>
         <div className="hero-bg" />
         <ParticleCanvas count={90} />
-        <div className="floating-moon hero-moon" />
+        <img
+                  src={moonImage}
+                  alt="Crimson Moon"
+                  className="hero-moon moon-image"
+                />
         <div className="hero-content fade-stagger">
           <h1 className="display-title" style={{fontSize:'clamp(2rem,5vw,3.4rem)'}}>THE OFFICIAL BOOK TRAILER</h1>
           <div style={{marginTop:18}}><span className="coming-soon-badge">COMING SOON</span></div>

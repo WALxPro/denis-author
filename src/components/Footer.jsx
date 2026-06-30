@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import MoonIcon from './MoonIcon'
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   const [show, setShow] = useState(false)
@@ -27,8 +28,8 @@ export default function Footer() {
             <Link to="/contact" className="footer-link">Contact</Link>
           </div>
           <div className="social-row">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-btn" aria-label="Facebook">f</a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="social-btn" aria-label="Instagram">ig</a>
+            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-btn" aria-label="Facebook"><FaFacebook/></a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="social-btn" aria-label="Instagram"><FaInstagram/></a>
           </div>
         </div>
         <p className="footer-bottom">© 2025 Denise R Gholson — Whispers Beneath Crimson Moon — The Red Ledger Series. All rights reserved.</p>

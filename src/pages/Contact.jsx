@@ -2,6 +2,7 @@ import { useState } from 'react'
 import ParticleCanvas from '../components/ParticleCanvas'
 import ScrollReveal from '../components/ScrollReveal'
 import AuthorPortrait2 from '../assets/AuthorPortrait2'
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
@@ -86,8 +87,8 @@ export default function Contact() {
             <h2 className="section-title">Follow the Journey</h2>
             <p className="subtext" style={{margin:'14px 0 26px'}}>Follow Denise on social media for updates, behind-the-scenes, and more.</p>
             <div className="social-row" style={{justifyContent:'center'}}>
-              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-btn" style={{width:60,height:60,fontSize:'1.2rem'}}>f</a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="social-btn" style={{width:60,height:60,fontSize:'1.2rem'}}>ig</a>
+              <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-btn" style={{width:60,height:60,fontSize:'1.2rem'}}><FaFacebook/></a>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="social-btn" style={{width:60,height:60,fontSize:'1.2rem'}}><FaInstagram/></a>
             </div>
           </ScrollReveal>
         </div>
